@@ -434,9 +434,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment = new FragmentWebInteractive();
             fragment.setArguments(bundle);
             tag = "FragmentWebInteractive";
-        } else if (id == R.id.documentation) {
+        } else if (id == R.id.calendar) {
             Bundle bundle = new Bundle();
             bundle.putInt("item_position", 2);
+            bundle.putString("type", getString(R.string.calendar_type));
+            bundle.putString("url", getString(R.string.calendar_url));
+            fragment = new FragmentWebInteractive();
+            fragment.setArguments(bundle);
+            tag = "FragmentWebInteractive";
+        } else if (id == R.id.documentation) {
+            Bundle bundle = new Bundle();
+            bundle.putInt("item_position", 3);
             bundle.putSerializable("item_id", R.id.documentation);
             bundle.putString("type", getString(R.string.documentation_type));
             bundle.putString("url", getString(R.string.documentation_url));
@@ -445,7 +453,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             tag = "FragmentWebInteractive";
         } else if (id == R.id.faq) {
             Bundle bundle = new Bundle();
-            bundle.putInt("item_position", 3);
+            bundle.putInt("item_position", 4);
             bundle.putSerializable("item_id", R.id.faq);
             bundle.putString("type", getString(R.string.faq_type));
             bundle.putString("url", getString(R.string.faq_url));

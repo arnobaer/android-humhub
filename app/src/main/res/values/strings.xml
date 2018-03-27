@@ -53,6 +53,10 @@
     <string name="messages_type">url</string>
     <string name="messages_url">https://community.humhub.com/mail/mail/index</string>
 
+    <string name="calendar_label">Calendar</string>
+    <string name="calendar_type">url</string>
+    <string name="calendar_url">https://community.humhub.com/calendar/global/index</string>
+
     <string name="faq_label">Faq</string>
     <string name="faq_type">url</string>
     <string name="faq_url">https://community.humhub.com/p/1</string>
